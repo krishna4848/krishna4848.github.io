@@ -4,22 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Keval Prajapati | Data & ML Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #f5f7fa, #e4ebf5);
+      color: #2c3e50;
+      line-height: 1.6;
     }
     header {
-      background-color: #1f2937;
-      color: #fff;
-      padding: 40px 20px;
+      background: #1f2937;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
     }
-    h1, h2 {
-      margin: 10px 0;
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
     }
     section {
       max-width: 1000px;
@@ -27,31 +36,44 @@
       padding: 0 20px;
     }
     .section-title {
+      font-size: 1.75rem;
       color: #1f2937;
-      font-size: 1.5rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+      border-left: 5px solid #2563eb;
+      padding-left: 15px;
       margin-bottom: 20px;
     }
     .project {
-      background-color: #fff;
-      padding: 20px;
+      background: white;
+      padding: 20px 25px;
       margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      color: #2563eb;
     }
     footer {
-      background-color: #1f2937;
-      color: #fff;
+      background: #1f2937;
+      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      font-size: 0.9rem;
     }
     a {
       color: #2563eb;
       text-decoration: none;
+      font-weight: 600;
     }
     .contact a {
-      margin: 0 10px;
+      margin-right: 15px;
+    }
+    .skills p {
+      margin: 10px 0;
     }
   </style>
 </head>
@@ -63,7 +85,7 @@
 
   <section>
     <h2 class="section-title">About Me</h2>
-    <p>I am a results-driven data professional with 3+ years of experience across analytics, machine learning, and automation. With a Master's in AI & ML from the University of Waterloo, I specialize in transforming data into strategic insights using Python, SQL, Power BI, and AWS. I’m passionate about streamlining processes and empowering decisions through data.</p>
+    <p>I’m a data professional with 3+ years of experience building analytics dashboards, automating reporting, and deploying ML solutions to support real-world decisions. I specialize in Python, SQL, Power BI, and AWS, and I’m passionate about making data-driven impact across business domains. My background combines technical depth with business thinking to solve problems efficiently and strategically.</p>
   </section>
 
   <section>
@@ -71,26 +93,26 @@
 
     <div class="project">
       <h3>🔍 GHG Emission Forecasting</h3>
-      <p>Developed regression models and Power BI dashboards to forecast monthly energy consumption and greenhouse gas emissions using structured electricity and gas datasets.</p>
+      <p>Forecasted monthly energy usage and GHG emissions using regression models and Power BI dashboards. Enabled sustainability insights using structured electricity and gas data.</p>
     </div>
 
     <div class="project">
       <h3>🏠 Real Estate Investment ML</h3>
-      <p>Clustered similar properties using unsupervised learning techniques and visualized them in Power BI to uncover investment opportunities in local housing markets.</p>
+      <p>Clustered similar properties using unsupervised learning and created Power BI visuals for investment pattern recognition based on property attributes.</p>
     </div>
 
     <div class="project">
       <h3>🛍️ Fashion Demand Forecasting</h3>
-      <p>Engineered a custom hybrid model using CNNs, LSTMs, and NLP that reduced WAPE by 20%, helping reduce overstock and address environmental issues in fast fashion.</p>
+      <p>Designed CNN-LSTM model combining product images, Google Trends, and past sales data. Achieved 20% improvement in WAPE for fast fashion demand predictions.</p>
     </div>
 
     <div class="project">
       <h3>📊 POS Sales Analytics</h3>
-      <p>Built end-to-end ETL and dashboard system in Python, SQL, and Power BI to analyze KPIs and product performance for a retail client using sales data.</p>
+      <p>Automated KPI dashboards in Power BI using ETL pipelines. Extracted insights from point-of-sale data to optimize product and store-level performance.</p>
     </div>
   </section>
 
-  <section>
+  <section class="skills">
     <h2 class="section-title">Skills</h2>
     <p><strong>Languages:</strong> Python, SQL, C++, R</p>
     <p><strong>Tools:</strong> Power BI, Excel, AWS, TensorFlow, Tableau, Jupyter, Git, SAP</p>
@@ -101,15 +123,16 @@
     <h2 class="section-title">Contact</h2>
     <div class="contact">
       <p>
-        📧 <a href="mailto:keval.prajapati01@gmail.com">keval.prajapati01@gmail.com</a><br>
-        🔗 <a href="https://www.linkedin.com/in/kevalprajapati/">LinkedIn</a> |
+        📧 <a href="mailto:keval811p@gmail.com">keval811p@gmail.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/keval-prajapati4444/">LinkedIn</a>
+        |
         🌐 <a href="https://kevalprajapati.github.io">Portfolio</a>
       </p>
     </div>
   </section>
 
   <footer>
-    <p>© 2024 Keval Prajapati</p>
+    <p>© 2024 Keval Prajapati • Built with 💙 using GitHub Pages</p>
   </footer>
 </body>
 </html>
