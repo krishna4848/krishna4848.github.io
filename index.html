@@ -81,16 +81,16 @@
       margin: 0 auto 2rem;
     }
     .btn {
-  background-color: var(--accent);
-  color: white;
-  font-weight: bold;
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  text-decoration: none;
-}
+      background-color: var(--accent);
+      color: white;
+      font-weight: bold;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
     section {
       padding: 5rem 0;
     }
@@ -160,13 +160,16 @@
           <li><a href="#contact">Contact</a></li>
           <li style="margin-left:auto; padding-left: 3rem;"><a href="assets/Keval_Prajapati_Resume.pdf" class="btn" download style="padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: bold; background-color: var(--accent); color: white;">Download Resume</a></li>
         </ul>
-        </ul>
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
         </button>
       </nav>
     </div>
   </header>
+
   <section class="hero">
     <div class="container">
       <h1>Machine Learning Engineer & Data Analyst</h1>
@@ -174,6 +177,7 @@
       <a href="#projects" class="btn">Explore Projects</a>
     </div>
   </section>
+
   <section id="experience">
     <div class="container">
       <h2>Experience</h2>
@@ -196,6 +200,7 @@
       </div>
     </div>
   </section>
+
   <section id="education">
     <div class="container">
       <h2>Education</h2>
@@ -211,8 +216,12 @@
           <p>Bachelor of Technology in Computer Engineering (Double Gold Medalist)<br>2015 - 2019</p>
         </div>
       </div>
+      <div style="text-align:center;margin-top:2rem;">
+        <a class="btn" href="#certifications">Certifications</a>
+      </div>
     </div>
   </section>
+
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
@@ -232,6 +241,7 @@
       </div>
     </div>
   </section>
+
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
@@ -246,9 +256,11 @@
       </div>
     </div>
   </section>
+
   <footer>
     <p>&copy; 2025 Keval Prajapati. Built with passion for data and design.</p>
   </footer>
+
   <script>
     function updateThemeIcon() {
       const themeIcon = document.getElementById('theme-icon');
